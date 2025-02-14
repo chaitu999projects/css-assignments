@@ -1,0 +1,42 @@
+1. Create a header that sticks to the top of the page as you scroll down.
+A sticky header is a navigation or information bar that remains fixed at the top of the viewport while the user scrolls down the page. This is achieved using CSS positioning.
+
+Implementation:
+Use position: fixed; to keep the header at the top.
+Set top: 0; to position it at the very top of the page.
+Use width: 100%; to ensure it spans the entire page width.
+Add a z-index value to ensure it stays above other content.
+Add margin-top to the page content so it does not get hidden behind the fixed header.
+2. Create a box that rotates when you hover over it.
+A rotating box is an interactive effect where an element spins when hovered. This effect is achieved using CSS transitions and transforms.
+
+Implementation:
+Use transform: rotate(360deg); to apply a full rotation.
+Use transition: transform 0.5s ease-in-out; to animate the rotation smoothly.
+Apply :hover to trigger the effect when the mouse hovers over the box.
+3. Create a hamburger menu icon using three stacked lines that transform into an X when hovered.
+A hamburger menu is commonly used in mobile navigation. It consists of three horizontal bars that turn into an "X" when hovered or clicked.
+
+Implementation:
+Create three div elements styled as bars (width: 100%, height: 5px).
+Use display: flex; flex-direction: column; to stack them.
+On hover, apply transform: rotate(45deg) and rotate(-45deg) to the first and third bars.
+Hide the middle bar using opacity: 0;.
+Use transition: all 0.4s ease-in-out; for a smooth effect.
+4. Create a search input that expands when clicked/focused.
+An expandable search input is a search bar that enlarges when clicked or focused, making it more user-friendly.
+
+Implementation:
+Initially, set the input field to a small width using width: 150px;.
+Use focus to apply width: 300px; when clicked.
+Add a transition: width 0.3s ease-in-out; for smooth expansion.
+Use outline: none; and border-radius for a clean look.
+5. Create a tooltip that appears above an element on hover, with a small arrow pointing down to the element.
+A tooltip is a small text box that appears when a user hovers over an element, providing additional information.
+
+Implementation:
+Use position: absolute; to place the tooltip above the element.
+Set bottom: 125%; to position it correctly.
+Use opacity: 0; visibility: hidden; to hide the tooltip by default.
+On hover, set opacity: 1; visibility: visible; to show it.
+Create the arrow using ::after with border-style: solid; and a transparent border to shape the triangle.
